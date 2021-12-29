@@ -18,10 +18,10 @@
     <div class="spacer"/>
     <div class="grid">
       <button class="grid-item1" @click="toShop"><div class="button-text" align="left">Produits et promotions</div></button>
-      <button class="grid-item2"><div class="button-text" align="left">Bateaux</div></button>
-      <button class="grid-item3"><div class="button-text" align="left">Restaurants</div></button>
-      <button class="grid-item4"><div class="button-text" align="left">Recettes</div></button>
-      <button class="grid-item5"><div class="button-text" align="left">Contact</div></button>
+      <button class="grid-item2" @click="toBoat"><div class="button-text" align="left">Bateaux</div></button>
+      <button class="grid-item3" @click="toRest"><div class="button-text" align="left">Restaurants</div></button>
+      <button class="grid-item4" @click="toDish"><div class="button-text" align="left">Recettes</div></button>
+      <button class="grid-item5" @click="toContact"><div class="button-text" align="left">Contact</div></button>
     </div>
 
     </div>
@@ -35,7 +35,18 @@ export default defineComponent({
     methods:{
         toShop(){
             this.$router.push({name:'Vue5'})
-
+        },
+         toContact(){
+            this.$router.push({name:'Vue1'})
+        },
+         toBoat(){
+            this.$router.push({name:'Vue2'})
+        },
+         toRest(){
+            this.$router.push({name:'Vue3'})
+        },
+         toDish(){
+            this.$router.push({name:'Vue4'})
         }
     }
 })
@@ -46,7 +57,7 @@ export default defineComponent({
 <style>
 body{
     
-    background-image: url("../assets/background.png") ;
+    background-image: url("../assets/fond.jpeg") ;
      background-repeat: no-repeat; 
     background-position: center;
     background-attachment: fixed;       
@@ -56,23 +67,6 @@ body{
     background-size: cover;
     height:100%;
     width:100%;
-
-
-
-
-
-   
-
-   
-   
-    
-    
-   
-    
-    
-    
-
-
 }
 #titre{
   font-family: "Snell Roundhand", "Noteworthy", "Times New Roman";

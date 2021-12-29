@@ -31,7 +31,7 @@ export default defineComponent({
             this.$router.push({name:'Vue0'})
 
         }
-   }
+    }
 })
 </script>
 

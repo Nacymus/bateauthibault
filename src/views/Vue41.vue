@@ -1,0 +1,73 @@
+<template>
+    <div>
+    <h1 id="titre">Noix de Saint-Jacques Flambées au Cognac</h1>
+    <div align="center">
+        <img class="bateau-img" src="../assets/saintJacques.png">
+    </div>
+
+    <div class="description" align="center">
+        <p>Saintes créatures des mers</p>
+    </div>
+    <div class="description-bateau" align="center">
+        <p class="pdesc">Charnues et délicieuse</p>
+        <p class="pdesc">Ce qu'il ya de plus raffinée dans les eauc du Nord</p>
+        <p class="pdesc">Les noix de saint jacques sont à déguster chaudes</p>
+        <p class="pdesc">Avec un pointe de cognac qui sublime le goût par son acidité</p>
+        <p class="pdesc">Rien de tel pour un diner de famille</p>
+        <p class="pdesc">Un soir d'été où il fait beau et on se fait plaisir aux papilles</p>
+    </div>
+    </div>
+</template>
+
+
+<script>
+    import { defineComponent} from 'vue'
+    export default defineComponent({
+        name: 'Vue41'
+    })
+</script>
+
+<style scoped>
+
+#titre {
+    font-size: 38px;
+    font-weight: 300;
+    font-weight: bold;
+    font-style: normal; 
+    letter-spacing: 1.1px;
+    font-weight: bold;
+    color: #050505;
+    margin: 0 22px 0 0;
+    padding: 0;
+    line-height: 55px;
+}
+.bateau-img{
+  width : 275px; height : 275px;
+  border: none;
+  -moz-border-radius : 550px;
+  -webkit-border-radius : 550px;
+  border-radius : 550px;
+}
+.decription{
+  margin-top: 20px;
+  font-family: "Times New Roman";
+  font-weight: bold;
+  font-weight: bold;
+  color: black;
+  font-size: 14;
+  font-style: normal;
+}
+.description-bateau{
+  margin-top: 20px;
+  font-family: "Times New Roman";
+  font-weight: bold;
+  font-weight: bold;
+  color: #020202;
+  font-size: 11;
+  font-style: normal;
+}
+.pdesc{
+   margin: 0px 0px; 
+}
+
+</style>

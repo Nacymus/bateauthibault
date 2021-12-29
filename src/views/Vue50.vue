@@ -24,11 +24,13 @@
 
 <script>
 import { defineComponent} from 'vue'
+import json from './json.products.json'
 export default defineComponent({
     
    name:'Vue50',
    
 })
+
 </script>
 
 <style>
